@@ -7,8 +7,8 @@
 
 nav{
   display:flex;
-  justify-content:space-around;
   align-items:center;
+  justify-content: space-evenly;
   background-color:rgb(65, 216, 216,.4);
   border-radius: 20px;
   box-shadow: 5px 5px 10px #6f7364;
@@ -16,12 +16,14 @@ nav{
 
 .title-text{
   font-size:25px;
-  text-shadow: 2px 2px 5px #6f7364
+  text-shadow: 2px 2px 5px #6f7364;
+  margin-right:20%;
 }
 
 .title-image{
   border-radius: 100px;
-  box-shadow: 2px 2px 5px #6f7364
+  box-shadow: 2px 2px 5px #6f7364;
+  margin-left:20%;
 }
 
 footer{
@@ -35,7 +37,7 @@ footer{
   border-radius:20px;
 }
 
-#hero-message{
+h2{
   text-shadow: 2px 2px 20px #6f7364;
 }
 
