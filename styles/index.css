@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat&family=Roboto:wght@300&display=swap');
+
+#content{
+  text-align:center;
+  font-family:Montserrat;
+}
+
+nav{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  background-color:rgb(65, 216, 216,.4);
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+.title-text{
+  font-size:25px;
+  text-shadow: 2px 2px 5px #6f7364
+}
+
+.title-image{
+  border-radius: 100px;
+  box-shadow: 2px 2px 5px #6f7364
+}
+
+footer{
+  justify-content:space-around;
+  background-color:rgb(65, 216, 216,.4);
+  align-items:center;
+  font-weight:bold;
+  padding-top:2%;
+  padding-bottom:2%;
+  font-size:20px;
+  border-radius:20px;
+}
+
+#hero-message{
+  text-shadow: 2px 2px 20px #6f7364;
+}
+
+.updateTime{
+  color:rgb(68, 0, 255);
+}
