@@ -1,0 +1,27 @@
+1) Suppliment words with visuals
+
+2) Make the page readable, 50-60 charactors per line (centered looks good sometimes)
+
+3) Too many fonts, stick to one, two, or three. Use different weights instead of new fonts. Bold and italics
+go a long way
+
+4) Ineffective color combinations are a quick way to loose clients. Use combinations that make your webpage
+easy to read and something that can catch the readers eye.
+
+5) Impliment lots of negative space, too little negative space can actually strain the clients eye and make the
+experience much less enjoyable. USE WHITE SPACE! Look to google.com for a good example.
+
+6) Align elements correctly, grids are a great way of helping with this.
+
+7) Contrast is your friend. DO NOT use light text on a light background. Use dark colors on light backgrounds.
+or use light text over a dark background.
+
+8) When used correctly, scaling of text or images can guide the client to another part of the page.
+
+9) Make sure that the fonts match the message of the page.
+
+10) Line breaks should have purpose, like sepereation between a header and a paragraph
+
+11) ALWAYS use high quality images. NEVER scale up.
+
+12) STAY CONSISTENT, use fonts correctly, colors correctly etc.
