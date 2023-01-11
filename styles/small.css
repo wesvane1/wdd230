@@ -6,24 +6,20 @@
 }
 
 nav{
-  display:flex;
   align-items:center;
   justify-content: space-evenly;
   background-color:rgb(65, 216, 216,.4);
-  border-radius: 20px;
   box-shadow: 5px 5px 10px #6f7364;
 }
 
 .title-text{
   font-size:25px;
   text-shadow: 2px 2px 5px #6f7364;
-  margin-right:20%;
 }
 
 .title-image{
   border-radius: 100px;
   box-shadow: 2px 2px 5px #6f7364;
-  margin-left:20%;
 }
 
 footer{
@@ -34,7 +30,6 @@ footer{
   padding-top:2%;
   padding-bottom:2%;
   font-size:20px;
-  border-radius:20px;
 }
 
 h2{
