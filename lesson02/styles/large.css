@@ -13,6 +13,8 @@ header, footer{
   text-align:center;
   border-radius: 20px;
   font-size: 1.5em;
+  box-shadow: 5px 5px 10px #6f7364;
+
 }
 
 div{
@@ -23,7 +25,6 @@ div{
 }
 
 header{
-  box-shadow: 5px 5px 10px #6f7364;
 }
 
 section{
