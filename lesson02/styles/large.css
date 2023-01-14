@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat&family=Roboto:wght@300&display=swap');
+
+body{
+  max-width:1600px;
+  font-family:roboto;
+}
+
+header, footer{
+  background-color:#c2c5aa;
+  color:white;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align:center;
+  border-radius: 20px;
+  font-size: 1.5em;
+}
+
+div{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top:3%;
+}
+
+section{
+  border:.1em solid black;
+  margin:20px;
+  background-color:#aac2c5;
+  color:black;
+  font-size: 1.5em;
+}
+
+h3, p{
+  text-align:center;
+}
+
+img{
+  width:100%;
+  align-items:center;
+}
