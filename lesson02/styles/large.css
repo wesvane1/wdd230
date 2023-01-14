@@ -3,13 +3,13 @@
 body{
   max-width:1600px;
   font-family:roboto;
+  margin:16px;
 }
 
 header, footer{
   background-color:#c2c5aa;
   color:white;
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding: 16px;
   text-align:center;
   border-radius: 20px;
   font-size: 1.5em;
@@ -19,6 +19,7 @@ div{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top:3%;
+  padding-bottom:3%;
 }
 
 header{
@@ -26,11 +27,14 @@ header{
 }
 
 section{
-  border:.1em solid black;
+  border:.1em solid #6f7364;
   margin:20px;
   background-color:#aac2c5;
   color:black;
   font-size: 1.5em;
+  border-radius:2rem;
+  box-shadow: 5px 5px 15px #6f7364;
+
 }
 
 h3, p{
