@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body{
+  max-width: 1000px;
+  margin:10px auto;
+  padding:5px;
+  border-radius:10px;
+  font-size: 1.5em;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+header, footer{
+  margin:10px auto;
+  text-align: center;
+  background-color:rgb(65, 216, 216,.4);
+  border-radius: 10px;
+  font-weight:bold;
+  padding:5px;
+  font-size:20px;
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+nav{
+  margin: 0 auto;
+}
+nav ul {
+  list-style-type: none;
+  overflow:hidden;
+  justify-content: space-between;
+}
+nav ul li a{
+  display: block;
+	text-align: center;
+}
+.link{
+  display:flex;
+  justify-content: center;
+  text-decoration: none;
+  color:black;
+  padding:10px;
+}
+.link:hover{
+  color:rgb(106, 106, 106);
+}
+.title{
+  text-align: center;
+}
+.logo{
+  align-items: center;
+  width:500px;
+}
+.active{
+  color:rgb(106, 106, 106);
+}
+.linkDesign{
+  text-decoration:none;
+  color:black;
+}
+.linkDesign:hover{
+  color:rgb(106,106,106);
+}
+.color1{
+  text-align:center;
+  background-color: #43d8d866;
+}
+.color2{
+  text-align:center;
+  color:white;
+  background-color: #6A6A6A;
+}
+
+@media only screen and (min-width: 37.5em){
+  nav ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
