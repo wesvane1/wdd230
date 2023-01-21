@@ -11,7 +11,8 @@ body{
 header, footer{
   margin:10px auto;
   text-align: center;
-  background-color:rgb(65, 216, 216,.4);
+  /* background-color:rgb(65, 216, 216,.4); */
+  background-color: #c2c5aa;
   border-radius: 10px;
   font-weight:bold;
   padding:5px;
@@ -62,12 +63,17 @@ nav ul li a{
 }
 .color1{
   text-align:center;
-  background-color: #43d8d866;
+  background-color: #c2c5aa;
 }
 .color2{
   text-align:center;
   color:white;
   background-color: #6A6A6A;
+}
+.color3{
+  text-align: center;
+  color:white;
+  background-color: black;
 }
 
 @media only screen and (min-width: 37.5em){
