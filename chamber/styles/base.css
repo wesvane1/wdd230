@@ -111,3 +111,7 @@ footer{
 .bottomSection{
   border-top: 1px solid black;
 }
+
+#currenntDate{
+  display:grid;
+}
