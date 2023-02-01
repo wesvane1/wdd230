@@ -14,12 +14,13 @@ button.addEventListener('click', () =>{
 
     li.textContent = chapter;
     deleteBtn.textContent='❌';
-    deleteBtn.addEventListener('click', ()=>{
+    deleteBtn.addEventListener('click', () =>{
       list.removeChild(li);
     });
 
-    li.appendChild(deleteBtn);
     list.appendChild(li);
+    li.appendChild(deleteBtn);
+    
   }
   input.value = '';
   input.focus();
