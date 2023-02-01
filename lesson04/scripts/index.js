@@ -8,8 +8,17 @@ const list = document.querySelector('ul');
 button.addEventListener('click', () =>{
   if (input.value !== ''){
     let chapter = input.value
+
     const li = document.createElement('li');
+    const deleteBtn = document.createElement('button');
+
     li.textContent = chapter;
+    deleteBtn.textContent='❌';
+    deleteBtn.addEventListener('click', ()=>{
+      list.removeChild(li);
+    });
+
+    li.appendChild(deleteBtn);
     list.appendChild(li);
   }
   input.value = '';
