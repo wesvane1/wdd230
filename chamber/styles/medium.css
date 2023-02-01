@@ -1,31 +1,32 @@
 @media only screen and (min-width: 35rem){
-  
-  nav button{
-    display: none;
-  }
-
-  nav ul#primaryNav{
-    display: flex;
-  }
-
-  nav ul li a{
-    border: none;
-  }
   main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   main section{
     height: 10rem;
   }
-  .spotlight p{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100px;
-    margin:3%;
-    border: 5px solid rgb(186, 184, 172);
-  }
   main .join{
     display:block;
+  }
+  .spotlightSection{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-row:3/4;
+    grid-column: 1/4;
+  }
+  main section{
+    grid-column: 1/4;
+  }
+  .weather{
+    grid-column:3/4;
+    grid-row:5/6;
+    padding: 6%;
+  }
+  .event{
+    grid-row:5/6;
+    grid-column: 1/3;
   }
 }

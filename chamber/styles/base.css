@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 body{
-  max-width:1600px;
+  /* max-width:1600px; */
   font-family: 'Nanum Gothic', sans-serif;
 }
 
 header{
   display:grid;
-  grid-template-columns: 1fr 35% 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
   justify-content: center;
   background-color: rgba(93,104,89,255);
   color: black;
   border-radius: 5px;
 }
+
+#currentDate{
+  grid-column: 3;
+  grid-row: 2;
+}
+
 .logo{
   max-width: 8rem;
 }
@@ -89,6 +96,14 @@ main section p{
   padding:5%;
   font-size: 18px;
 }
+.spotlight3{
+  display: none;
+}
+.spotlightSection{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
 
 .spotlightSection p{
   height: 100px;
@@ -110,8 +125,4 @@ footer{
 
 .bottomSection{
   border-top: 1px solid black;
-}
-
-#currenntDate{
-  display:grid;
 }
