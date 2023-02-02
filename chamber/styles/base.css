@@ -17,6 +17,7 @@ header{
 #currentDate{
   grid-column: 3;
   grid-row: 2;
+  text-align:center;
 }
 
 .logo{
@@ -59,6 +60,7 @@ nav ul li a{
   color: black;
 }
 nav ul li a:hover{
+  transition:.1s;
   background-color: rgba(112, 130, 62, 0.57);
 }
 nav ul li.active a{
