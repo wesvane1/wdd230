@@ -25,7 +25,7 @@ let currentDay = new Date();
 let day = currentDay.getDay();
 
 // if the day is monday or tuesday
-if (day == 0 || day == 1){
+if (day == 1 || day == 2){
   const headerRef = document.getElementsByTagName('header')[0];
   let banner = document.createElement('h3');
   banner.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
