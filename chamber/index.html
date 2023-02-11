@@ -40,11 +40,22 @@ Make sure your design matches your schema for the site. -->
     <div id="currentDate"></div>
   </header>
   <main>
-    <section class="hero"><p>Hero with site name with call to action</p></section>
+    <section class="hero">
+      <picture class="photoA">
+        <source media="(max-width: 400px)" srcset="images/small.jpg">
+        <source media="(max-width: 600px)" srcset="images/medium.jpg">
+        <source media="(max-width: 1000px)" srcset="images/large.jpg">
+        <img src="images/wdd230-org.jpg" alt="church">
+    </picture>
+    </section>
     <section class="news"><p>News Release</p></section>
     <section class="join"><p>Join</p></section>
     <section class="event"><p>Event</p></section>
-    <section class="weather"><p>Weather</p></section>
+    <section class="weather">
+      <p>Current temp: <span id="t"></span></p>
+      <p>Wind speed: <span id="w"></span></p>
+      <p>Wind Chill: <span id="wc"></span></p>
+    </section>
     <section class="spotlightSection">
       <p class="spotlight">Spotlight 1</p>
       <p class="spotlight">Spotlight 2</p>
@@ -70,5 +81,6 @@ Make sure your design matches your schema for the site. -->
     </section>
   </footer>
   <script src="scripts/scripts.js"></script>
+  <script src="scripts/windchill.js"></script>
 </body>
 </html>
