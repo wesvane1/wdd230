@@ -1,12 +1,3 @@
-<!-- TODO: Your page must incorporate a hover effect on the navigation items <a> 
-  tags to change in some way conducive to your design to highlight the current 
-  menu item that is being hovered over with the mouse pointer.
-
-Use JavaScript to display a banner on Mondays or Tuesdays only at the very top of 
-the page that says "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m." 
-Make sure your design matches your schema for the site. -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,11 +33,11 @@ Make sure your design matches your schema for the site. -->
   <main>
     <section class="hero">
       <picture class="photoA">
-        <source media="(max-width: 400px)" srcset="images/small.jpg">
-        <source media="(max-width: 600px)" srcset="images/medium.jpg">
-        <source media="(max-width: 1000px)" srcset="images/large.jpg">
-        <img src="images/wdd230-org.jpg" alt="church">
-    </picture>
+        <source media="(min-width: 400px) and (max-width: 599px)" srcset="images/small.jpeg">
+        <source media="(max-width: 600px) and (max width: 999px)" srcset="images/medium.jpeg">
+        <source media="(min-width: 1000px)" srcset="images/large.jpeg">
+        <img src="images/large.jpeg" alt="People talking">
+      </picture>
     </section>
     <section class="news"><p>News Release</p></section>
     <section class="join"><p>Join</p></section>
@@ -63,21 +54,21 @@ Make sure your design matches your schema for the site. -->
     </section>
   </main>
   <footer>
-    <img class="logo" src="images/folsomChamber.png" alt="logo for chamber of commerce">
+    <img class="logo" class="bottom" src="images/folsomChamber.png" alt="logo for chamber of commerce">
     <section>
-      <p>Folsom Chamber of Commerce</p>
-      <p>200 Wool St, Folsom, CA 95630</p>
+      <p class="name">Folsom Chamber of Commerce</p>
+      <p class="addr">200 Wool St, Folsom, CA 95630</p>
     </section>
     <section>
-      <p>nanb@folsompartners.com</p>
-      <p>(916) 985-2698</p>
-      <p>location map</p>
+      <p class="email">nanb@folsompartners.com</p>
+      <p class="phone">(916) 985-2698</p>
+      <p class="map">location map</p>
     </section>
     <section class="bottomSection">
-      <p>&copy;<span id="currentYear"></span></p>
-      <p>Wesley Vane</p>
-      <p>WDD 230 Project</p>
-      <p><span id="lastModified"></span></p>
+      <p class="year">&copy;<span id="currentYear"></span></p>
+      <p class="myName">Wesley Vane</p>
+      <p class="className">WDD 230 Project</p>
+      <p class="lastM"><span id="lastModified"></span></p>
     </section>
   </footer>
   <script src="scripts/scripts.js"></script>

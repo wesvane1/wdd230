@@ -29,4 +29,21 @@
     grid-row:5/6;
     grid-column: 1/3;
   }
+  footer{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    height:17rem;
+    padding:15px;
+  }
+  .addr{
+    grid-row: 2/3;
+  }
+  .email{
+    grid-row: 3/4;
+  }
+  .bottomSection{display:grid; grid-row: 2/3; grid-column:1/4; padding:20px;}
+  .myName{grid-column:2/3;}
+  .className{grid-column:3/4;}
+  .lastM{grid-column: 4/5;}
 }
