@@ -3,7 +3,7 @@ body{
   /* max-width:1600px; */
   font-family: 'Nanum Gothic', sans-serif;
 }
-
+/* 
 header{
   display:grid;
   grid-template-columns: repeat(5, 1fr);
@@ -12,7 +12,20 @@ header{
   background-color: rgba(93,104,89,255);
   color: black;
   border-radius: 5px;
+} */
+header{
+  display:grid;
+  justify-content: center;
+  background-color: rgba(93,104,89,255);
+  color: black;
+  border-radius: 5px;
 }
+.chamberName{grid-row:2/3; grid-column: 1/2;}
+#hamBtn{grid-row:3/4; grid-column: 1/2;}
+#primaryNav{grid-row:4/5; grid-column: 1/2;}
+.facebook{grid-row:5/6; grid-column: 1/2;}
+.linkd{grid-row:6/7; grid-column: 1/2;}
+.currentDate{grid-row:7/8; grid-column: 1/2;}
 
 #currentDate{
   grid-column: 3;

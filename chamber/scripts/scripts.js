@@ -31,10 +31,9 @@ if (day == 1 || day == 2){
   banner.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
   headerRef.append(banner);
   banner.style.textAlign = 'center';
-  banner.style.display = 'flex';
   banner.style.backgroundColor = 'white';
-  banner.style.gridColumn = '3';
-  banner.style.gridRow = '3';
+  banner.style.gridColumn = '2/5';
+  banner.style.gridRow = '3/4';
   banner.style.margin= '10px'
   banner.style.marginTop = '50px';
   banner.style.borderRadius = '10px';

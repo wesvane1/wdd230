@@ -9,6 +9,28 @@
   main .join{
     display:block;
   }
+  header{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    background-color: rgba(93,104,89,255);
+    color: black;
+    border-radius: 5px;
+  }
+  .facebook{
+    display:grid;
+    grid-row:3/4;
+    grid-column: 5/6;
+  }
+  .linkd{
+    display:grid;
+    grid-row:1/2;
+    grid-column: 5/6;
+  }
+  .chamberName{
+    grid-column: 2/4;
+  }
   .spotlightSection{
     display: grid;
     grid-template-rows: 1fr;
