@@ -139,3 +139,7 @@ footer{
 .hero{
   width:100%;
 }
+
+.discoverImg{display:block; width: 75%; margin: auto;}
+
+.imgP{text-align: center;}

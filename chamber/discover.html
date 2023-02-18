@@ -4,14 +4,85 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Desciption" content="This page will hold images that will utilize lazy loading.">
-  <title>Document</title>
+  <meta name="Description" content="This page will hold images that will utilize lazy loading.">
+  <title>Discover Page</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">  
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
-  <img src="" alt="">
-  <img src="" alt="">
-  <img src="" alt="">
-  <img src="" alt="">
-  <img src="" alt="">
+  <header>
+    <a href="index.html"><img class="logo" src="images/folsomChamber.png" alt="logo for chamber of commerce"></a>
+    <h1 class="chamberName">Folsom Chamber of Commerce</h1>
+    <nav>
+      <button id="hamBtn"> <span>&#9776;</span> <span>X</span> </button>
+      <ul id="primaryNav">
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="facebook" href="https://www.facebook.com" target="_blank"><img class="social" src="images/facebook.png" alt="facebook logo"></a>
+    <a class="linkd" href="https://www.linkedin.com" target="_blank"><img class="sociallinkedin" src="images/linkdin.png" alt="linkdin logo"></a>
+    <div id="currentDate"></div>
+  </header>
+  <div>
+    <p class="imgP">
+      Built in 1885, and originally used as a department store, the Folsom Hotel is rich with history
+      and stories.
+    </p>
+    <img src="images/placeholder.jpeg" data-src="images/hotel.jpeg" alt="The folsom hotel." loading="lazy" class="discoverImg">
+  </div>
+  <div>
+    <p class="imgP">
+      Folsom is home to many bridges and beautiful scenery, this is nothing short of breathtaking
+      in the early morning hours.
+    </p>
+    <img src="images/placeholder.jpeg" data-src="images/bridge.webp" alt="A pretty bridge in town" loading="lazy" class="discoverImg">
+  </div>
+  <div>
+    <p class="imgP">
+      The Folsom Lake dam was originally built in the mid 1950's, and it's primary function  was flood control.
+      It now serves a greater purpose, making a fun massive lake for families to get together and have some fun!
+    </p>
+    <img src="images/placeholder.jpeg" data-src="images/dam.jpeg" alt="Folsom state dam" loading="lazy" class="discoverImg">
+  </div>
+  <div>
+    <p class="imgP">
+      The Folsom city Zoo is home to many fun animals, including eagles and deer, but coolest of all, there are 
+      mountain lions and bears there too! You're sure to have fun at the Folsom City Zoo!
+    </p>
+    <img src="images/placeholder.jpeg" data-src="images/zoo.jpeg" alt="Folsom City Zoo" loading="lazy" class="discoverImg">
+  </div>
+  <div>
+    <p class="imgP">
+      Folsom's historic downtown is a place rich with history. Everywhere you go there are reminders of the cities
+      past life.
+    </p>
+    <img src="images/placeholder.jpeg" data-src="images/history.jpeg" alt="Historic Downtown" loading="lazy" class="discoverImg">
+  </div>
+  <footer>
+    <img class="logo" class="bottom" src="images/folsomChamber.png" alt="logo for chamber of commerce">
+    <section>
+      <p class="name">Folsom Chamber of Commerce</p>
+      <p class="addr">200 Wool St, Folsom, CA 95630</p>
+    </section>
+    <section>
+      <p class="email">nanb@folsompartners.com</p>
+      <p class="phone">(916) 985-2698</p>
+      <p class="map">location map</p>
+    </section>
+    <section class="bottomSection">
+      <p class="year">&copy;<span id="currentYear"></span></p>
+      <p class="myName">Wesley Vane</p>
+      <p class="className">WDD 230 Project</p>
+      <p class="lastM"><span id="lastModified"></span></p>
+    </section>
+  </footer>
+  <script src="scripts/scripts.js"></script>
+  <script src="scripts/lazyLoad.js"></script>
 </body>
 </html>
