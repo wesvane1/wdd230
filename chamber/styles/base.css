@@ -20,21 +20,16 @@ header{
   color: black;
   border-radius: 5px;
 }
-.chamberName{grid-row:2/3; grid-column: 1/2;}
+.chamberName{grid-row:2/3; grid-column: 1/2; text-align:center;}
 #hamBtn{grid-row:3/4; grid-column: 1/2;}
 #primaryNav{grid-row:4/5; grid-column: 1/2;}
 .facebook{grid-row:5/6; grid-column: 1/2;}
-.linkd{grid-row:6/7; grid-column: 1/2;}
-.currentDate{grid-row:7/8; grid-column: 1/2;}
-
-#currentDate{
-  grid-column: 3;
-  grid-row: 2;
-  text-align:center;
-}
+.linkd{grid-row:6/7; grid-column: 1/2; margin:10px;}
+#currentDate{grid-row:7/8; grid-column: 1/2; text-align:center; margin-top: 20px; margin-bottom: 10px;}
 
 .logo{
   max-width: 8rem;
+  margin:auto;
 }
 header a{
   display: flex;
@@ -140,4 +135,7 @@ footer{
 
 .bottomSection{
   border-top: 1px solid black;
+}
+.hero{
+  width:100%;
 }

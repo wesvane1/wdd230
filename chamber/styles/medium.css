@@ -18,6 +18,14 @@
     color: black;
     border-radius: 5px;
   }
+  .nav{
+    grid-row:3/4;
+    grid-column: 2/5;
+  }
+  .chamberName{grid-row:1/2; grid-column: 2/3; text-align:center; margin: auto;}
+  .facebook{grid-row:2/3; grid-column: 5/6;}
+  .linkd{grid-row:1/2; grid-column: 5/6;}
+  #currentDate{grid-row:3/4; grid-column: 2/5; text-align:center; margin-top: 20px; margin-bottom: 10px;}
   .facebook{
     display:grid;
     grid-row:3/4;
@@ -68,4 +76,7 @@
   .myName{grid-column:2/3;}
   .className{grid-column:3/4;}
   .lastM{grid-column: 4/5;}
+  .hero{
+    width: 100%;
+  }
 }
