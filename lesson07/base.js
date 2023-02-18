@@ -10,7 +10,7 @@ function preloadImage(img){
 
 const imgOptions = {
   threshold:0,
-  rootMargin:"0px 0px -300px 0px"
+  rootMargin:"0px 0px 100px 0px"
   // the above line lets the images load 300 pixles before they show up on the users screen.
   // if the number were to be -500, then it would load 500 pixles after the user scrolls past.
 };
