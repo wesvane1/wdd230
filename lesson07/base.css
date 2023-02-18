@@ -1,5 +1,13 @@
-picture{
-  display:block;
-  align-items: center;
-  margin-bottom: 1000px;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat&family=Roboto:wght@300&display=swap');
+
+body{
+  font-family: Roboto;
 }
+
+img{
+  display:block;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+h1{text-align: center;}
