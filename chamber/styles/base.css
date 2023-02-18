@@ -140,6 +140,6 @@ footer{
   width:100%;
 }
 
-.discoverImg{display:block; width: 75%; margin: auto;}
+.discoverImg{display:block; width: 75%; margin: auto; border-radius: 10px; margin-bottom: 120px;}
 
 .imgP{text-align: center;}
