@@ -16,7 +16,7 @@ header{
 header{
   display:grid;
   justify-content: center;
-  background-color: rgba(93,104,89,255);
+  background-color: rgb(154 171 148);
   color: black;
   border-radius: 5px;
 }
@@ -46,8 +46,9 @@ header a{
 
 
 /* This is all for the nav */
-nav{
+header, nav{
   display: grid;
+  grid-row:3/4;
   grid-template-rows: 1fr;  
   margin: 1em;
 }
@@ -131,7 +132,7 @@ main .join{
 }
 
 footer{
-  background-color: rgba(93,104,89,255);
+  background-color: rgb(154 171 148);
   border-radius: 5px;
   text-align: center;
   padding:3%;
