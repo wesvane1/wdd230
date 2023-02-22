@@ -1,0 +1,43 @@
+table{
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+td{
+  text-align:center;
+}
+
+tbody tr{
+  font-size:larger;
+  font-weight:bold;
+}
+
+th, td{
+  border: 1px solid black
+}
+
+thead tr:nth-child(even) th{
+  padding: 10px;
+  color:black;
+  background-color:darkgray;
+}
+
+th{
+  padding:10px;
+  color:white;
+  font-size: larger;
+  background-color:black;
+}
+
+tbody tr:nth-child(even){
+  background-color: lightgray;
+}
+
+tbody tr td{
+  padding-left:10px;
+  padding-right: 10px;
+}
+
+thead tr td{
+  background-color: black;
+}
