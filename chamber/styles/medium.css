@@ -76,7 +76,10 @@
   .myName{grid-column:2/3;}
   .className{grid-column:3/4;}
   .lastM{grid-column: 4/5;}
-  .hero{
+  /* .hero{
     width: 100%;
+  } */
+  .hero_section{
+    grid-column:1/-1;
   }
 }
