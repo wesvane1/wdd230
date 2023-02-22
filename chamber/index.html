@@ -32,11 +32,11 @@
   </header>
   <main>
     <section class="hero">
-      <picture class="photoA">
-        <source media="(min-width: 400px) and (max-width: 599px)" srcset="images/small.jpeg">
-        <source media="(max-width: 600px) and (max width: 999px)" srcset="images/medium.jpeg">
-        <source media="(min-width: 1000px)" srcset="images/large.jpeg">
-        <img src="images/large.jpeg" alt="People talking">
+      <picture class="">
+        <source class="" media="(min-width: 400px)" srcset="images/small.jpeg">
+        <source class="" media="(min-width: 560px)" srcset="images/medium.jpeg">
+        <source class="" media="(min-width: 1024px)" srcset="images/large.jpeg">
+        <img class="responsive" src="images/small.jpeg" alt="People talking">
       </picture>
     </section>
     <section class="news"><p>News Release</p></section>
@@ -70,8 +70,10 @@
       <p class="className">WDD 230 Project</p>
       <p class="lastM"><span id="lastModified"></span></p>
     </section>
+    <p class="numOfVisits"><span>Number of Visits: </span><span id="visit"></span></p>
   </footer>
   <script src="scripts/scripts.js"></script>
   <script src="scripts/windchill.js"></script>
+  <script src="scripts/visits.js"></script>
 </body>
 </html>
