@@ -16,7 +16,7 @@ header{
 header{
   display:grid;
   justify-content: center;
-  background-color: rgb(154 171 148);
+  background-color: #bacbb4;
   color: black;
   border-radius: 5px;
 }
