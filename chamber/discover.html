@@ -22,7 +22,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="#">Directory</a></li>
-        <li><a href="#">Join</a></li>
+        <li><a href="join.html">Join</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
@@ -30,12 +30,15 @@
     <a class="linkd" href="https://www.linkedin.com" target="_blank"><img class="sociallinkedin" src="images/linkdin.png" alt="linkdin logo"></a>
     <div id="currentDate"></div>
   </header>
+
+  <!-- Resize image width, then adjust the quality, possibly crop.-->
   <div>
     <p class="imgP">
       Built in 1885, and originally used as a department store, the Folsom Hotel is rich with history
       and stories.
     </p>
-    <img src="images/placeholder.jpeg" data-src="images/hotel.jpeg" alt="The folsom hotel." loading="lazy" class="discoverImg">
+    <!-- For width and height the ratio is all that matters, i don't need to put in height -->
+    <img src="images/hotel.jpeg" alt="The folsom hotel." loading="lazy" width="300" class="discoverImg">
   </div>
   <div>
     <p class="imgP">
@@ -86,6 +89,6 @@
   </footer>
   <script src="scripts/scripts.js"></script>
   <script src="scripts/visits.js"></script>
-  <script src="scripts/lazyLoad.js"></script>
+  <!-- <script src="scripts/lazyLoad.js"></script> -->
 </body>
 </html>

@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folsom Chamber of Commerce</title>
   <meta name="description" content="The purpose of this commerce page is to help to further the interests of small businesses in a local area.">
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/normalize.css">  
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/medium.css">
   <link rel="stylesheet" href="styles/large.css">
-  <title>Chamber</title>
 </head>
 <body>
 
@@ -23,10 +23,11 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="#">Directory</a></li>
-        <li><a href="#">Join</a></li>
+        <li><a href="join.html">Join</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+    <!-- Multiple classes can be called like this: class="social link etc." -->
     <a class="facebook" href="https://www.facebook.com" target="_blank"><img class="social" src="images/facebook.png" alt="facebook logo"></a>
     <a class="linkd" href="https://www.linkedin.com" target="_blank"><img class="sociallinkedin" src="images/linkdin.png" alt="linkdin logo"></a>
     <div id="currentDate"></div>
@@ -34,10 +35,10 @@
   <main>
     
     <section class="hero">
-      <picture class="">
-        <source class="" media="(min-width: 400px)" srcset="images/small.jpeg">
-        <source class="" media="(min-width: 560px)" srcset="images/medium.jpeg">
-        <source class="" media="(min-width: 1024px)" srcset="images/large.jpeg">
+      <picture>
+        <!-- min width can be the same as media queries -->
+        <source media="(min-width: 1024px)" srcset="images/large.jpeg">        
+        <source media="(min-width: 560px)" srcset="images/medium.jpeg">
         <img class="responsive" src="images/small.jpeg" alt="People talking">
       </picture>
     </section>
