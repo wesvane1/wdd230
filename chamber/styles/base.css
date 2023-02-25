@@ -30,6 +30,7 @@ header{
 .numOfVisits{
   grid-row:3/4;
   grid-column:2/3;
+  margin: 0 0 20px 0;
 }
 
 .logo{
@@ -132,7 +133,7 @@ main .join{
 }
 
 footer{
-  background-color: rgb(154 171 148);
+  background-color: #bacbb4;
   border-radius: 5px;
   text-align: center;
   padding:3%;
@@ -155,4 +156,67 @@ footer{
 .hero_section{
   position:relative; 
   z-index:0;
+}
+
+/* Join page */
+
+.join h1{padding-left:2rem;}
+
+.join{display:block;}
+
+form fieldset{
+  border-radius: 10px;
+  border: 3px solid #bacbb4;
+  margin: 2rem;
+  padding: .5rem 2%;
+}
+
+form legend{
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top, form div{
+  display: block;
+  padding: 1rem;
+}
+
+form label.sbs{
+  display: block;
+  padding: .75rem 0;
+  color:#555;
+}
+
+.fs1 label input{
+  min-height:44px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+form input.submitBtn{
+  padding-left:2rem;
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin:0 0 2rem 2%;
+  width:96%;
+  max-width:20rem;
+}
+
+form label.top input:required{
+  border-left: red solid 6px;
+}
+form label.top input:required:valid{
+  border-left: green solid 6px;
+}
+
+/* Thanks page */
+.thanks{display:block; padding: 2rem;}
+
+.thanks p{
+  background-color: lightgray;
+  padding:10px;
+  border-radius: 10px;
+  font-size:1.3rem;
 }

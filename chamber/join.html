@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folsom Chamber of Commerce</title>
+  <meta name="description" content="The purpose of this commerce page is to help to further the interests of small businesses in a local area.">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">  
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><img class="logo" src="images/folsomChamber.png" alt="logo for chamber of commerce"></a>
+    <h1 class="chamberName">Folsom Chamber of Commerce</h1>
+    <nav>
+      <button id="hamBtn"> <span>&#9776;</span> <span>X</span> </button>
+      <ul id="primaryNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Multiple classes can be called like this: class="social link etc." -->
+    <a class="facebook" href="https://www.facebook.com" target="_blank"><img class="social" src="images/facebook.png" alt="facebook logo"></a>
+    <a class="linkd" href="https://www.linkedin.com" target="_blank"><img class="sociallinkedin" src="images/linkdin.png" alt="linkdin logo"></a>
+    <div id="currentDate"></div>
+  </header>
+
+  <main class="join">
+    <h1>We Want to Get Connected!</h1>
+    <form method="get" action="thanks.html">
+      <fieldset class="fs1">
+        <legend>Applicant Information</legend>
+        <label class="top">First Name* <input type="text" name="fname" required></label>
+        <label class="top">Last Name* <input type="text" name="lname" required></label>
+        <label class="top">Business Position <input type="text" name="business" pattern="[a-zA-Z\s\-]{7,}" title="Minimum 7 Characters Required" ></label>
+        <label class="top">Email* <input type="email" name="email" placeholder="JonDoe@gmail.com" required></label>
+        <label class="top">Phone* <input type="tel" name="phone" placeholder="2084551234" required></label>
+        <label class="top">Business Name or Title <input type="text" name="bname"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Membership Level</legend>
+        <label class="sbs"><input type="radio" name="audience" value="NP"> NP Membership (Non-Profit)</label>
+        <label class="sbs"><input type="radio" name="audience" value="Bronze"> Bronze membership</label>
+        <label class="sbs"><input type="radio" name="audience" value="Silver"> Silver Membership</label>
+        <label class="sbs"><input type="radio" name="audience" value="Gold"> Gold Membership</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Description of Business</legend>
+        <p>Take a moment to describe your business to us in the box below</p>
+        <label>
+          <textarea name="description" rows="5"></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Sell Your Information" class="submitBtn">
+    </form>
+  </main>
+
+  <footer>
+    <img class="logo" class="bottom" src="images/folsomChamber.png" alt="logo for chamber of commerce">
+    <section>
+      <p class="name">Folsom Chamber of Commerce</p>
+      <p class="addr">200 Wool St, Folsom, CA 95630</p>
+    </section>
+    <section>
+      <p class="email">nanb@folsompartners.com</p>
+      <p class="phone">(916) 985-2698</p>
+      <p class="map">location map</p>
+    </section>
+    <section class="bottomSection">
+      <p class="year">&copy;<span id="currentYear"></span></p>
+      <p class="myName">Wesley Vane</p>
+      <p class="className">WDD 230 Project</p>
+      <p class="lastM"><span id="lastModified"></span></p>
+    </section>
+    <p class="numOfVisits"><span>Number of Visits: </span><span id="visit"></span></p>
+  </footer>
+<script src="scripts/scripts.js"></script>
+<script src="scripts/banner.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/visits.js"></script>
+</body>
+</html>

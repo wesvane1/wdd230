@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folsom Chamber of Commerce</title>
+  <meta name="description" content="The purpose of this commerce page is to help to further the interests of small businesses in a local area.">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">  
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img class="logo" src="images/folsomChamber.png" alt="logo for chamber of commerce"></a>
+    <h1 class="chamberName">Folsom Chamber of Commerce</h1>
+    <nav>
+      <button id="hamBtn"> <span>&#9776;</span> <span>X</span> </button>
+      <ul id="primaryNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Multiple classes can be called like this: class="social link etc." -->
+    <a class="facebook" href="https://www.facebook.com" target="_blank"><img class="social" src="images/facebook.png" alt="facebook logo"></a>
+    <a class="linkd" href="https://www.linkedin.com" target="_blank"><img class="sociallinkedin" src="images/linkdin.png" alt="linkdin logo"></a>
+    <div id="currentDate"></div>
+  </header>
+  <main class="thanks">
+    <h1>Getting Connected</h1>
+    <hr>
+    <p>
+      Thank you very much for reaching out to us here at the Folsom Chamber 
+      of Commerce! We will be getting back to you in the next 2-6 weeks!
+    </p>
+  </main>
+
+  <footer>
+    <img class="logo" class="bottom" src="images/folsomChamber.png" alt="logo for chamber of commerce">
+    <section>
+      <p class="name">Folsom Chamber of Commerce</p>
+      <p class="addr">200 Wool St, Folsom, CA 95630</p>
+    </section>
+    <section>
+      <p class="email">nanb@folsompartners.com</p>
+      <p class="phone">(916) 985-2698</p>
+      <p class="map">location map</p>
+    </section>
+    <section class="bottomSection">
+      <p class="year">&copy;<span id="currentYear"></span></p>
+      <p class="myName">Wesley Vane</p>
+      <p class="className">WDD 230 Project</p>
+      <p class="lastM"><span id="lastModified"></span></p>
+    </section>
+    <p class="numOfVisits"><span>Number of Visits: </span><span id="visit"></span></p>
+  </footer>
+</body>
+<script src="scripts/scripts.js"></script>
+<script src="scripts/banner.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/visits.js"></script>
+</body>
+</html>
