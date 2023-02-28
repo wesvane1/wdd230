@@ -147,7 +147,14 @@ footer{
   width:100%;
 } */
 
-.discoverImg{display:block; width: 75%; margin: auto; border-radius: 10px; margin-bottom: 120px;}
+/* Discover Page */
+
+.discoverImg{
+  display:block;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 10%;}
 
 .imgP{text-align: center;}
 
