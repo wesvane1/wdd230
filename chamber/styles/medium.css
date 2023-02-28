@@ -14,10 +14,15 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     justify-content: center;
-    background-color: r#bacbb4;
+    background-color: #bacbb4;
     color: black;
     border-radius: 5px;
   }
+  .joinBanner{
+    grid-column: 2/5;
+    padding: .7rem;
+  }
+
   header nav{
     grid-row: 1/2;
     grid-column: 4/5;
