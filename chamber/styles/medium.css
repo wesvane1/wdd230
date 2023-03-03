@@ -84,4 +84,12 @@
   .hero_section{
     grid-column:1/-1;
   }
+
+  /* Directory page */
+  .cards{
+    display:grid;
+    grid-template-columns: 1fr, 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
 }
