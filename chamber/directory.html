@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <title>Directory</title>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img class="logo" src="images/folsomChamber.png" alt="logo for chamber of commerce"></a>
+    <h1 class="chamberName">Folsom Chamber of Commerce</h1>
+    <nav>
+      <button id="hamBtn"> <span>&#9776;</span> <span>X</span> </button>
+      <ul id="primaryNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="facebook" href="https://www.facebook.com" target="_blank"><img class="social" src="images/facebook.png" alt="facebook logo"></a>
+    <a class="linkd" href="https://www.linkedin.com" target="_blank"><img class="sociallinkedin" src="images/linkdin.png" alt="linkdin logo"></a>
+    <div id="currentDate"></div>
+  </header>
+  <main>
+    <h2>Business Directory</h2> 
+    <button class="b1">Grid View</button>
+    <button class="b2">List View</button>
+
+    <div class="cards">
+      <!-- <section class="card">
+        <img src="images/directory/quickQuack.jpeg" alt="Quick Quack logo">
+        <p>1300 Prairie City Rd, Folsom, CA 95630</p>
+        <p>(916) 985-3274</p>
+        <a href="https://www.dontdrivedirty.com/">Quick Quack Website</a>
+      </section>
+      <section class="card">
+        <img src="images/directory/peakDesign.png" alt="Peak Design Logo">
+        <p>105 Herrill Ct, Folsom, CA 95630</p>
+        <p>(916) 984-6273</p>
+        <a href="https://www.peakdesign.net/">Peak Design Website</a>
+      </section>
+      <section class="card">
+        <img src="images/directory/BJ.png" alt="">
+        <p>402 E Bidwell St, Folsom, CA 95630</p>
+        <p>(916) 608-8824</p>
+        <a href="https://bj-cinnamon.business.site/">BJ Cinnamon Website</a>
+      </section>
+      <section class="card">
+        <img src="images/directory/micron.jpeg" alt="">
+        <p>2235 Iron Point Rd, Folsom, CA 95630</p>
+        <p>(916) 458-3003</p>
+        <a href="https://www.micron.com/">Micron Website</a>
+      </section>
+      <section class="card">
+        <img src="images/directory/escape.png" alt="">
+        <p>311 E Bidwell St, Folsom, CA 95630</p>
+        <p>(916) 634-5100</p>
+        <a href="https://wayofescape.com/folsom">Way Of Escape Website</a>
+      </section>
+      <section class="card">
+        <img src="images/directory/LaBou.png" alt="">
+        <p>404 Blue Ravine Rd #600, Folsom, CA 95630</p>
+        <p>(916) 983-3885</p>
+        <a href="http://www.labou.com/">La Bou Website</a>
+      </section>
+      <section class="card">
+        <img src="images/directory/holt.png" alt="">
+        <p>1568 Creekside Dr #104, Folsom, CA 95630</p>
+        <p>(916) 983-5321</p>
+        <a href="https://www.bracesbyholt.com/">Holt Orthodontics Website</a>
+      </section>
+      <section class="card">
+        <img src="images/directory/adm.jpeg" alt="">
+        <p>138 McFarland Dr, Folsom, CA 95630</p>
+        <p>(916) 595-5355</p>
+        <a href="https://www.admgaragedoors.com/">ADM Garage doors Website</a>
+      </section>
+      <section class="card">
+        <img src="images/directory/ironHorse.png" alt="">
+        <p>460 Palladio Pkwy, Folsom, CA 95630</p>
+        <p>(916) 618-4322</p>
+        <a href="https://www.ironhorsetavern.net/">Iron Horse Tavern Website</a>
+      </section> -->
+    </div>
+  </main>
+  <footer>
+    <img class="logo" class="bottom" src="images/folsomChamber.png" alt="logo for chamber of commerce">
+    <div>
+      <p class="name">Folsom Chamber of Commerce</p>
+      <p class="addr">200 Wool St, Folsom, CA 95630</p>
+    </div>
+    <div>
+      <p class="email">nanb@folsompartners.com</p>
+      <p class="phone">(916) 985-2698</p>
+      <p class="map">location map</p>
+    </div>
+    <div class="bottomSection">
+      <p class="year">&copy;<span id="currentYear"></span></p>
+      <p class="myName">Wesley Vane</p>
+      <p class="className">WDD 230 Project</p>
+      <p class="lastM"><span id="lastModified"></span></p>
+    </div>
+    <p class="numOfVisits"><span>Number of Visits: </span><span id="visit"></span></p>
+  </footer>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/scripts.js"></script>
+  <script src="scripts/visits.js"></script>
+</body>
+</html>
