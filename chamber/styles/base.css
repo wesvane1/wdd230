@@ -3,6 +3,21 @@ body{
   /* max-width:1600px; */
   font-family: 'Nanum Gothic', sans-serif;
 }
+.joinBtn{
+  background-color: black;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+.joinBtn:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.weatherImg{
+  width:30%;
+}
 /* 
 header{
   display:grid;
@@ -103,7 +118,6 @@ nav ul.open{
 }
 
 main section{
-  height: 100%;
   margin:10px;
   padding: 3%;
   background-color: rgba(229,227,213,255);
@@ -231,3 +245,6 @@ form label.top input:required:valid{
   border-radius: 10px;
   font-size:1.3rem;
 }
+
+/* Directory */
+#businessLogo{justify-content: center;}
