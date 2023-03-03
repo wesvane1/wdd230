@@ -3,9 +3,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  main section{
-    height: 10rem;
-  }
   main .join{
     display:block;
   }
