@@ -1,0 +1,76 @@
+{
+  "business" : [
+    {
+      "name" : "Quick Quack",
+      "address" : "1300 Prairie City Rd, Folsom, CA 95630",
+      "phone" : "(916) 985-3274",
+      "url" : "https://www.dontdrivedirty.com/",
+      "membership" : "Gold",
+      "businessLogo" : "images/directory/quickQuack.jpeg"
+    },
+    {
+      "name" : "Peak Design",
+      "address" : "105 Herrill Ct, Folsom, CA 95630",
+      "phone" : "(916) 984-6273",
+      "url" : "https://www.peakdesign.net/",
+      "membership" : "Silver",
+      "businessLogo" : "images/directory/peakDesign.png"
+    },
+    {
+      "name" : "BJ Cinnamon",
+      "address" : "402 E Bidwell St, Folsom, CA 95630",
+      "phone" : "(916) 608-8824",
+      "url" : "https://bj-cinnamon.business.site/",
+      "membership" : "Gold",
+      "businessLogo" : "images/directory/BJ.png"
+    },
+    {
+      "name" : "Micron",
+      "address" : "2235 Iron Point Rd, Folsom, CA 95630",
+      "phone" : "(916) 458-3003",
+      "url" : "https://www.micron.com/",
+      "membership" : "Gold",
+      "businessLogo" : "images/directory/micron.png"
+    },
+    {
+      "name" : "Way Of Escape",
+      "address" : "311 E Bidwell St, Folsom, CA 95630",
+      "phone" : "(916) 634-5100",
+      "url" : "https://wayofescape.com/folsom",
+      "membership" : "Bronze",
+      "businessLogo" : "images/directory/escape.png"
+    },
+    {
+      "name" : "La Bou",
+      "address" : "1568 Creekside Dr #104, Folsom, CA 95630",
+      "phone" : "(916) 983-5321",
+      "url" : "https://www.bracesbyholt.com/",
+      "membership" : "Gold",
+      "businessLogo" : "images/directory/LaBou.png"
+    },
+    {
+      "name" : "Holt Orthodontics",
+      "address" : "1568 Creekside Dr #104, Folsom, CA 95630",
+      "phone" : "(916) 983-5321",
+      "url" : "https://www.bracesbyholt.com/",
+      "membership" : "Gold",
+      "businessLogo" : "images/directory/holt.png"
+    },
+    {
+      "name" : "ADM Garage doors",
+      "address" : "138 McFarland Dr, Folsom, CA 95630",
+      "phone" : "(916) 595-5355",
+      "url" : "https://www.admgaragedoors.com/",
+      "membership" : "Bronze",
+      "businessLogo" : "images/directory/adm.jpeg"
+    },
+    {
+      "name" : "Iron Horse Tavern",
+      "address" : "460 Palladio Pkwy, Folsom, CA 95630",
+      "phone" : "(916) 618-4322",
+      "url" : "https://www.ironhorsetavern.net/",
+      "membership" : "Silver",
+      "businessLogo" : "images/directory/ironHorse.png"
+    }
+  ]
+}
