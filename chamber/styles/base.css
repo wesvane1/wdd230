@@ -248,12 +248,62 @@ form label.top input:required:valid{
 
 /* Directory */
 
-.b1, .b2{cursor: pointer;}
+.directBtn{
+  display: flex;
+  justify-content: center;
+  gap:1em;
+}
+
+#gridBtn, #listBtn{
+  cursor: pointer;
+  text-align: center;
+  width: 100px;
+  height: 80px;
+  background-color: rgba(229, 227, 213, 2555);
+  border:none;
+  border-radius: 10px;
+  margin: 1rem 0 1rem 0;
+  font-size: 18px;
+}
 
 h2{text-align:center;}
 
-.cards{
+.grid .cards{
   display:grid;
   grid-template-columns: 1fr;
   gap:1rem;
 }
+
+.list{
+  display:flex;
+  flex-direction: column;
+}
+
+.list .cards{
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.list .card img{display:none;}
+
+.list section{
+  display:flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.list .cards:nth-child(odd){
+  background-color: rgba(229,227,213,255);
+}
+
+.list section:nth-child(even){
+  background-color: rgb(209 206 181);
+}
+
+.list vl{
+  border-left:1px solid grey;
+}
+
+.list .cards .card p, h3{margin-left:1rem; margin-right:1rem;}
+
+.list .cards .card a{font-size:18px; margin: 1rem 1rem 1rem 1rem}

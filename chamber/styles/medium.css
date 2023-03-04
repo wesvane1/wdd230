@@ -87,13 +87,13 @@
 
   /* Directory page */
 
-  .cards{
+  .grid .cards{
     font-size: 24px;
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:1rem;
   }
-  .card{
+  .grid .card{
     text-align: center;
     vertical-align: middle;
   }
