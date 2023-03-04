@@ -9,7 +9,7 @@
   nav ul#primaryNav{
     display: flex;
   }
-  main{
+  .homeMain{
     display:grid;
     grid-template-columns: repeat(4, 1fr );
   }
@@ -46,4 +46,10 @@
 
   /* Footer */
 
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    padding: 1em;
+  }
 }

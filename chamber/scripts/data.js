@@ -1,5 +1,10 @@
 const link = "json/data.json"
 
+const gridBtn = document.querySelector("#gridBtn");
+const listBtn = document.querySelector("#listBtn");
+const test = document.querySelector("article"); 
+
+
 async function getBusinessData() {
   const response = await fetch(link);
   const data = await response.json();
@@ -14,7 +19,7 @@ const displayBusiness = (business) =>{
 
   business.forEach((business) =>{
     let card = document.createElement('section');
-    card.setAttribute('class', 'card')
+    card.setAttribute('class', 'card');
     let businessLogo = document.createElement('img');
     let address = document.createElement('p');
     let phone = document.createElement('p');
@@ -40,5 +45,16 @@ const displayBusiness = (business) =>{
     card.appendChild(membership);
 
     cards.appendChild(card);
+  })
+
+
+  gridBtn.addEventListener(click, () => {
+    test.classList.add("grid");
+    test.classList.remove("list")
+  })
+  
+  listBtn.addEventListener(click, () => {
+    test.classList.add("list")
+    test.classList.remove("grid");
   })
 }

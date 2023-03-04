@@ -247,14 +247,13 @@ form label.top input:required:valid{
 }
 
 /* Directory */
+
+.b1, .b2{cursor: pointer;}
+
+h2{text-align:center;}
+
 .cards{
   display:grid;
   grid-template-columns: 1fr;
   gap:1rem;
-}
-
-.card{
-  margin:auto;
-  width:300px;
-  padding: 1rem;
 }
