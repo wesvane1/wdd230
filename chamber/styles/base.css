@@ -75,6 +75,7 @@ nav ul{
   list-style-type: none;
   padding: 0;
   margin:0;
+  font-size:20px;
 }
 nav button{
   margin: .2rem 2vw;
@@ -180,6 +181,8 @@ footer{
 
 /* Join page */
 
+input, select, textarea{padding:1rem;}
+
 .join h1{padding-left:2rem;}
 
 .join{display:block;}
@@ -209,7 +212,6 @@ form label.sbs{
 }
 
 .fs1 label input{
-  min-height:44px;
   border: 1px solid black;
   border-radius: 5px;
 }
