@@ -15,9 +15,10 @@ body{
   cursor: pointer;
 }
 
-.weatherImg{
+#weather-icon{
   width:30%;
 }
+
 /* 
 header{
   display:grid;
@@ -138,8 +139,15 @@ main section p{
 
 .spotlightSection p{
   height: 100px;
-  margin:3%;
-  border: 5px solid rgb(186, 184, 172);
+  padding:1rem;
+  font-size:22px;
+  margin:0px;
+  font-weight:bold;
+}
+
+.news p, a{
+  font-size:22px;
+  font-weight:bold;
 }
 
 main .join{

@@ -41,7 +41,6 @@
     grid-row:1/4;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: 1fr;
-    height:94%;
   }
 
   /* Footer */
