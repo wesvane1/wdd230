@@ -1,5 +1,5 @@
 .main{
-  background-color: #7dc682;
+  background-color: rgba(229,227,213,255);
   padding: 10px;
 }
 
@@ -8,6 +8,8 @@ h1{
 }
 
 #weather-icon{
+  width:75px;
+  height: auto;
   border-radius:10px;
   transition:.2s;
 }
@@ -15,7 +17,7 @@ h1{
 #weather-icon:hover{
   transition: .3s;
   box-shadow: 1px 1px 5px #283029;
-  background-color: #87d78d;
+  background-color: rgba(241,229,215,255);
 }
 
 .hoverMe{
