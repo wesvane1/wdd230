@@ -171,14 +171,28 @@ footer{
 
 /* Discover Page */
 
-.discoverImg{
-  display:block;
-  width: 50%;
-  margin: auto;
-  border-radius: 10px;
-  margin-bottom: 10%;}
+.discoverDiv{
+  background-color: rgba(229,227,213,255);
+  grid-template-columns: 1fr 1fr;
+  display:flex;
+  margin: 1rem;
+  padding: 1rem;
+}
 
-.imgP{text-align: center;}
+.discoverImg{
+  width:50%;
+  height:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.imgP{
+  padding:1rem;
+  float:right;
+  text-align: center;
+}
 
 .responsive{width:100%;}
 

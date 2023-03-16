@@ -30,44 +30,43 @@
     <a class="linkd" href="https://www.linkedin.com" target="_blank"><img class="sociallinkedin" src="images/linkdin.png" alt="linkdin logo"></a>
     <div id="currentDate"></div>
   </header>
+  <div class="discoverDiv">
+      <img src="images/hotel.jpeg" data-src="images/hotel.jpeg" alt="lazy" class="discoverImg">
+      <p class="imgP">
+        Built in 1885, and originally used as a department store, the Folsom Hotel is rich with history
+        and stories.
+      </p>
+    </div>
+    <div class="discoverDiv">
+      <img src="images/bridge.webp" data-src="images/bridge.webp" alt="lazy" class="discoverImg">
+      <p class="imgP">
+        Folsom is home to many bridges and beautiful scenery, this is nothing short of breathtaking
+        in the early morning hours.
+      </p>
+    </div>
+    <div class="discoverDiv">
+      <img src="images/dam.jpeg" data-src="images/dam.jpeg" alt="lazy" class="discoverImg">
+      <p class="imgP">
+        The Folsom Lake dam was originally built in the mid 1950's, and it's primary function  was flood control.
+        It now serves a greater purpose, making a fun massive lake for families to get together and have some fun!
+      </p>
+    </div>
+    <div class="discoverDiv">
+      <img src="images/zoo.jpeg" data-src="images/zoo.jpeg" alt="lazy" class="discoverImg">
+      <p class="imgP">
+        The Folsom city Zoo is home to many fun animals, including eagles and deer, but coolest of all, there are 
+        mountain lions and bears there too! You're sure to have fun at the Folsom City Zoo!
+      </p>
+    </div>
+    <div class="discoverDiv">
+      <img src="images/history.jpeg" data-src="images/history.jpeg" alt="lazy" class="discoverImg">
+      <p class="imgP">
+        Folsom's historic downtown is a place rich with history. Everywhere you go there are reminders of the cities
+        past life.
+      </p>
+    </div>
+  </div>
 
-  <!-- Resize image width, then adjust the quality, possibly crop.-->
-  <div>
-    <p class="imgP">
-      Built in 1885, and originally used as a department store, the Folsom Hotel is rich with history
-      and stories.
-    </p>
-    <!-- For width and height the ratio is all that matters, i don't need to put in height -->
-    <img src="images/hotel.jpeg" alt="The folsom hotel." loading="lazy" width="300" class="discoverImg">
-  </div>
-  <div>
-    <p class="imgP">
-      Folsom is home to many bridges and beautiful scenery, this is nothing short of breathtaking
-      in the early morning hours.
-    </p>
-    <img src="images/bridge.webp" alt="A pretty bridge in town" loading="lazy" width="300" class="discoverImg">
-  </div>
-  <div>
-    <p class="imgP">
-      The Folsom Lake dam was originally built in the mid 1950's, and it's primary function  was flood control.
-      It now serves a greater purpose, making a fun massive lake for families to get together and have some fun!
-    </p>
-    <img src="images/dam.jpeg" alt="Folsom state dam" loading="lazy" width="300" class="discoverImg">
-  </div>
-  <div>
-    <p class="imgP">
-      The Folsom city Zoo is home to many fun animals, including eagles and deer, but coolest of all, there are 
-      mountain lions and bears there too! You're sure to have fun at the Folsom City Zoo!
-    </p>
-    <img src="images/zoo.jpeg" alt="Folsom City Zoo" loading="lazy" width="300" class="discoverImg">
-  </div>
-  <div>
-    <p class="imgP">
-      Folsom's historic downtown is a place rich with history. Everywhere you go there are reminders of the cities
-      past life.
-    </p>
-    <img src="images/history.jpeg" alt="Historic Downtown" loading="lazy" width="300" class="discoverImg">
-  </div>
   <footer>
     <img class="logo" class="bottom" src="images/folsomChamber.png" alt="logo for chamber of commerce">
     <div>
@@ -87,8 +86,8 @@
     </div>
     <p class="numOfVisits"><span>Number of Visits: </span><span id="visit"></span></p>
   </footer>
+  <script src="scripts/lazyLoad.js"></script>
   <script src="scripts/scripts.js"></script>
   <script src="scripts/visits.js"></script>
-  <!-- <script src="scripts/lazyLoad.js"></script> -->
 </body>
 </html>
