@@ -13,7 +13,7 @@
       "address" : "105 Herrill Ct, Folsom, CA 95630",
       "phone" : "(916) 984-6273",
       "url" : "https://www.peakdesign.net/",
-      "membership" : "Silver",
+      "membership" : "Gold",
       "businessLogo" : "images/directory/peakDesign.png"
     },
     {
@@ -37,7 +37,7 @@
       "address" : "311 E Bidwell St, Folsom, CA 95630",
       "phone" : "(916) 634-5100",
       "url" : "https://wayofescape.com/folsom",
-      "membership" : "Bronze",
+      "membership" : "Gold",
       "businessLogo" : "images/directory/escape.png"
     },
     {
@@ -61,7 +61,7 @@
       "address" : "138 McFarland Dr, Folsom, CA 95630",
       "phone" : "(916) 595-5355",
       "url" : "https://www.admgaragedoors.com/",
-      "membership" : "Bronze",
+      "membership" : "Gold",
       "businessLogo" : "images/directory/adm.jpeg"
     },
     {
@@ -69,7 +69,7 @@
       "address" : "460 Palladio Pkwy, Folsom, CA 95630",
       "phone" : "(916) 618-4322",
       "url" : "https://www.ironhorsetavern.net/",
-      "membership" : "Silver",
+      "membership" : "Gold",
       "businessLogo" : "images/directory/ironHorse.png"
     }
   ]
