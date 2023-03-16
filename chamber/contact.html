@@ -32,9 +32,36 @@
     <a class="linkd" href="https://www.linkedin.com" target="_blank"><img class="sociallinkedin" src="images/linkdin.png" alt="linkdin logo"></a>
     <div id="currentDate"></div>
   </header>
-  <main>
-    <h1 class="newLink"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Click Me!</a></h1>
+
+  <main class="join contact">
+    <h1>We Want to Hear From You!</h1>
+    <form method="get" action="thanks.html">
+      <fieldset class="fs1">
+        <legend>Contact Information</legend>
+        <label class="top">First Name* <input type="text" name="fname" required></label>
+        <label class="top">Last Name* <input type="text" name="lname" required></label>
+        <label class="top">Email* <input type="email" name="email" placeholder="JonDoe@gmail.com" required></label>
+        <label class="top">Business Name or Title* <input type="text" name="bname" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Would You Like to Receive Email Updates?</legend>
+        <label class="sbs"><input type="radio" name="audience" value="NP"> Yes</label>
+        <label class="sbs"><input type="radio" name="audience" value="Bronze"> Yes, but only major updates</label>
+        <label class="sbs"><input type="radio" name="audience" value="Gold"> No</label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Your Message to Us</legend>
+        <p>Take a Moment to Voice Any Questions or Concerns</p>
+        <label>
+          <textarea name="description" rows="5"></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Apply" class="submitBtn">
+    </form>
   </main>
+
   <footer>
     <img class="logo bottom" src="images/folsomChamber.png" alt="logo for chamber of commerce">
     <section>
