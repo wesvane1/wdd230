@@ -260,6 +260,51 @@ form label.top input:required:valid{
   border-left: green solid 6px;
 }
 
+/* Table in join page */
+table{
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+td{
+  text-align:center;
+}
+
+tbody tr{
+  font-size:larger;
+  font-weight:bold;
+}
+
+th, td{
+  border: 3px solid #bacbb4;
+}
+
+thead tr:nth-child(even) th{
+  padding: 10px;
+  color:black;
+  background-color:#bacbb4;
+}
+
+th{
+  padding:10px;
+  color:blakc;
+  font-size: larger;
+  background-color:#bacbb4;
+}
+
+tbody tr:nth-child(even){
+  background-color: #bacbb4;
+}
+
+tbody tr td{
+  padding-left:10px;
+  padding-right: 10px;
+}
+
+thead tr td{
+  background-color: #bacbb4;
+}
+
 /* Thanks page */
 .thanks{display:block; padding: 2rem;}
 
