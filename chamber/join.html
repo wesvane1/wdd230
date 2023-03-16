@@ -47,12 +47,49 @@
       </fieldset>
       <fieldset>
         <legend>Membership Level</legend>
-        <label class="sbs"><input type="radio" name="audience" value="NP"> NP Membership (Non-Profit)</label>
-        <label class="sbs"><input type="radio" name="audience" value="Bronze"> Bronze membership</label>
-        <label class="sbs"><input type="radio" name="audience" value="Silver"> Silver Membership</label>
-        <label class="sbs"><input type="radio" name="audience" value="Gold"> Gold Membership</label>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="5" scope="colgroup">Membership Benefits</th>
+            </tr>
+            <tr>
+              <td colspan="1" rowspan="2"></td>
+              <th scope="col" col="2">Non Profit (Free)</th>
+              <th scope="col" col="3">Basic ($60/Year)</th>
+              <th scope="col" col="4">Premium ($120/Year)</th>
+              <th scope="col" col="5">Deluxe ($240/Year)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Feature in Newspaper</td>
+              <td>❌</td>
+              <td>✔️</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>Advertized in City Hall</td>
+              <td>❌</td>
+              <td>❌</td>
+              <td>✔️</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td>Featured in Chamber of Commerce Website</td>
+              <td>❌</td>
+              <td>❌</td>
+              <td>❌</td>
+              <td>✔️</td>
+            </tr>
+          </tbody>
+        </table>
+        <label class="sbs"><input type="radio" name="audience" value="NP"> NP Membership (Non-Profit: Free)</label>
+        <label class="sbs"><input type="radio" name="audience" value="Bronze"> Bronze membership ($60/Year)</label>
+        <label class="sbs"><input type="radio" name="audience" value="Silver"> Silver Membership ($120/Year)</label>
+        <label class="sbs"><input type="radio" name="audience" value="Gold"> Gold Membership ($240/Year)</label>
       </fieldset>
-
+      
       <fieldset>
         <legend>Description of Business</legend>
         <p>Take a moment to describe your business to us in the box below</p>
