@@ -138,7 +138,6 @@ main section p{
 }
 
 .spotlightSection p{
-  height: 100px;
   padding:1rem;
   font-size:22px;
   margin:0px;
@@ -328,11 +327,16 @@ thead tr td{
   text-align: center;
   width: 100px;
   height: 80px;
-  background-color: rgba(229, 227, 213, 2555);
+  background-color: rgba(229, 227, 213, 255);
   border:none;
   border-radius: 10px;
   margin: 1rem 0 1rem 0;
   font-size: 18px;
+  transition:.3s;
+}
+#gridBtn:hover, #listBtn:hover{
+  transition: .2s;
+  background-color: rgb(209 206 181);
 }
 
 h2{text-align:center;}
@@ -380,3 +384,7 @@ h2{text-align:center;}
 
 
 .newLink{text-align: center;}
+
+.business{background-color: white;}
+
+.business1{display:none;}
