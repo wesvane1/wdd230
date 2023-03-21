@@ -1,0 +1,7 @@
+
+/* Nav Button */
+#hamBtn span:nth-child(1){display:block;}
+#hamBtn span:nth-child(2){display:none;}
+
+#hamBtn.open span:nth-child(1){display:none;}
+#hamBtn.open span:nth-child(2){display:block;}
