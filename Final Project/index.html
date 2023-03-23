@@ -14,35 +14,38 @@
   <header>
     <!-- Logo goes here <img> -->
     <nav>
+      <h2>Bountiful Fruits</h2>
       <button id="hamBtn"> <span>&#9776;</span> <span>X</span> </button>
       <ul id="primaryNav">
         <li><a href="index.html">Home</a></li>
         <li><a href="fresh.html">Fresh</a></li>
         <li><a href="aboutUs.html">About Us</a></li>
       </ul>
+      <button class="makeJuice">Create your own Smoothie!</button>
     </nav>
-    <span class="phone">1+ (555) 555-5555</span>
-    <span class="email">email.e@bountifulfoods.net</span>
   </header>
 
   <main>
     <div class="hero">
-      <!-- Hero image goes here, with proper lazy loading attribute -->
-      <h1>Our Fruit from Carlsbad California</h1>
-      <!-- The below P element has tons of filler text -->
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Nunc eu eleifend lacus. Etiam malesuada justo ex, vitae cursus 
-        leo congue rutrum. Aliquam erat volutpat. Praesent et orci 
-        fermentum lacus sodales pharetra. Sed tempus velit nec rutrum 
-        lacinia. In hendrerit sodales lorem at auctor. Sed felis turpis, 
-        suscipit ac aliquet pulvinar, faucibus quis elit. Nunc at placerat 
-        arcu, tempor cursus nibh. Morbi ante orci, hendrerit et molestie a, 
-        sagittis eu libero.
-      </p>
+      <!-- Hero image goes here, with proper lazy loading attribute 
+      hero image: picture of a smoothie or an orange farm-->
+      <h1>Our Fruit is Locally Sourced!</h1>
+      <p>Want to make your own smoothie? Click <button href="">Here!</button></p>
     </div>
-    <div class="juiceCreation">
-      <!-- Image of a  -->
+    
+    <div class="weather">
+      <h3>Current Conditions</h3>
+      <figure>
+        <img src="" alt="" id="weather-icon"/>
+        <figcaption></figcaption>
+      </figure>
+      <p>Current temp: <span id="current-temp"></span><span>°F</span></p>
+      <p>High/Low for Today: <span id="high-low"></span>°F</p>
+      <hr>
+      <p>High/Low for <span id="nextDay"></span>: <span id="highLow1"></span>°F</p>
+      <p>High/Low for <span id="nextNextDay"></span>: <span id="highLow2"></span>°F</p>
+      <p>High/Low for <span id="nextNextDay1"></span>: <span id="highLow3"></span>°F</p>
+
     </div>
   </main>
 
@@ -59,5 +62,7 @@
     </div>
   </footer>
   <script src="Final Project/scripts/button.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/days.js"></script>
 </body>
 </html>
