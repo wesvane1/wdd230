@@ -14,14 +14,13 @@
   <header>
     <!-- Logo goes here <img> -->
     <nav>
-      <h2>Bountiful Fruits</h2>
+      <h1>Bountiful Fruits</h1>
       <button id="hamBtn"> <span>&#9776;</span> <span>X</span> </button>
       <ul id="primaryNav">
         <li><a href="index.html">Home</a></li>
         <li><a href="fresh.html">Fresh</a></li>
         <li><a href="aboutUs.html">About Us</a></li>
       </ul>
-      <button class="makeJuice">Create your own Smoothie!</button>
     </nav>
   </header>
 
@@ -29,7 +28,12 @@
     <div class="hero">
       <!-- Hero image goes here, with proper lazy loading attribute 
       hero image: picture of a smoothie or an orange farm-->
-      <h1>Our Fruit is Locally Sourced!</h1>
+      <picture>
+        <source media="(min-width: 1024px)" srcset="images/large.jpg">
+        <source media="(min-width: 560px)" srcset="images/medium.jpeg">
+        <img src="images/small.jpeg" data-src="images/small.jpeg" loading="lazy" alt="picture of fruit">
+      </picture>
+      <h1>Our Product Locally Sourced!</h1>
       <p>Want to make your own smoothie? Click <button href="">Here!</button></p>
     </div>
     
