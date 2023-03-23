@@ -1,3 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* Header */
+header{
+  background-color: #FFB562;
+  border-radius:10px;
+  color:black;
+}
+header nav {
+  display:grid;
+}
+nav h1 {
+  grid-row:1/2;
+  text-align: center;
+  font-size:3rem;
+}
+nav ul {
+  list-style-type: none;
+  display: none;
+}
+nav button{
+  margin: .1rem 1vw;
+  background: transparent;
+  border:none;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+nav ul.open{
+  display:block;
+  text-align: center;
+  padding:0px;
+}
+nav ul li{
+  text-decoration: none;
+  padding: 10px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size:1.5rem;
+}
+
+/* This is for the Main Section */
+
+.hero img{
+  width:100%;
+  margin-top:3%;
+  border-radius: 10px;
+}
 
 /* Nav Button */
 #hamBtn span:nth-child(1){display:block;}
