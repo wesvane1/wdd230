@@ -2,6 +2,7 @@
 const url = 'https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&appid=75caa3fdf9f667d98b42ee52f413891b&units=imperial&cnt=5'
 
 const currentTemp = document.querySelector('#current-temp');
+const humidity = document.querySelector('#humidity')
 const highLow = document.querySelector('#high-low');
 const highLow1 = document.querySelector('#highLow1');
 const highLow2 = document.querySelector('#highLow2');
@@ -27,6 +28,7 @@ async function apiFetch() {
 apiFetch();
 
 function  displayResults(weatherData) {
+  const humidity = weatherData.list[0].main.humidity;
   const temp = weatherData.list[0].main.temp;
   const high = weatherData.list[0].main.temp_max;
   const low = weatherData.list[0].main.temp_min;
@@ -40,6 +42,7 @@ function  displayResults(weatherData) {
   const high3 = weatherData.list[3].main.temp_max;
   const low3 = weatherData.list[3].main.temp_min;
 
+  humidity.innerHTML = `<strong>${humidity}</strong>`;
   currentTemp.innerHTML = `<strong>${temp.toFixed(0)}</strong>`;
   highLow.innerHTML = `<strong>${high.toFixed(0)}/${low.toFixed(0)}`;
 
