@@ -14,12 +14,20 @@
   <header>
     <!-- Logo goes here <img> -->
     <nav>
-      <h1>Bountiful Fruits</h1>
+      <!-- Instagram Logo -->
+      <h1>Bountiful Foods</h1>
+      <!-- Facebook Logo -->
       <button id="hamBtn"> <span>&#9776;</span> <span>X</span> </button>
       <ul id="primaryNav">
         <li><a href="index.html">Home</a></li>
         <li><a href="fresh.html">Fresh</a></li>
         <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="http://www.facebook.com" target="_blank"><img src="images/facebook.png" alt=""></a></li>
+        <li><a href="http://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt=""></a></li>
+        <!-- <div class="social">
+          <a href="http://www.facebook.com"></a><img src="images/facebook.png" alt="">
+          <a href="http://www.linkedin.com"></a><img src="images/linkedin.png" alt="">
+        </div> -->
       </ul>
     </nav>
   </header>
@@ -29,12 +37,16 @@
       <!-- Hero image goes here, with proper lazy loading attribute 
       hero image: picture of a smoothie or an orange farm-->
       <picture>
-        <source media="(min-width: 1024px)" srcset="images/large.jpg">
+        <source media="(min-width: 1024px)" srcset="images/large.jpeg">
         <source media="(min-width: 560px)" srcset="images/medium.jpeg">
         <img src="images/small.jpeg" data-src="images/small.jpeg" loading="lazy" alt="picture of fruit">
       </picture>
+    </div>
+
+    <div class="smoothie">
       <h1>Our Product Locally Sourced!</h1>
-      <p>Want to make your own smoothie? Click <button href="">Here!</button></p>
+      <p>Want to make your own smoothie?</p>
+      <button>Click Here!</button>
     </div>
     
     <div class="weather">
@@ -43,13 +55,13 @@
         <img src="" alt="" id="weather-icon"/>
         <figcaption></figcaption>
       </figure>
+      <p>Humidity: <span id="humidity"></span>%</p>
       <p>Current temp: <span id="current-temp"></span><span>°F</span></p>
       <p>High/Low for Today: <span id="high-low"></span>°F</p>
       <hr>
       <p>High/Low for <span id="nextDay"></span>: <span id="highLow1"></span>°F</p>
       <p>High/Low for <span id="nextNextDay"></span>: <span id="highLow2"></span>°F</p>
       <p>High/Low for <span id="nextNextDay1"></span>: <span id="highLow3"></span>°F</p>
-
     </div>
   </main>
 
