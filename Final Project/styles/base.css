@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap');
 body{
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Dosis', sans-serif;
+  background-color: #F9F2ED;
 }
 
 /* Header */
 header{
-  background-color: #FFB562;
-  border-radius:10px;
+  background-color: #f2cb05;
+  border-radius:5px;
   color:black;
+  font-size:2em;
 }
 header nav {
   display:grid;
@@ -16,7 +17,6 @@ header nav {
 nav h1 {
   grid-row:1/2;
   text-align: center;
-  font-size:3rem;
 }
 nav ul {
   list-style-type: none;
@@ -37,20 +37,68 @@ nav ul.open{
 }
 nav ul li{
   text-decoration: none;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 nav ul li a{
   text-decoration: none;
   color: black;
   font-size:1.5rem;
 }
+.social{
+  display:block;
+}
 
 /* This is for the Main Section */
+
+main{
+  display:grid;
+}
+
+.hero{
+  grid-column: 1/4;
+  grid-row:1/2;
+}
 
 .hero img{
   width:100%;
   margin-top:3%;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+.smoothie, .weather{
+  text-align: center;
+  margin:1em;
+  padding:1em;
+  border-radius:5px;
+  background-color:#3ab0ff80;
+  font-size:1.5em;
+}
+
+.smoothie{
+  grid-row:2/3;
+  grid-column:2/3;
+}
+
+.smoothie button{
+  cursor:pointer;
+  border-radius:5px;
+  transition:.2s;
+  height: 35px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: transparent;
+  font-size:1em;
+}
+.smoothie button:hover{
+  box-shadow:9px 5px 10px 1px;
+  transition:.2s;
+  border-radius:5px;
+  background-color: white;
+}
+
+.weather{
+  grid-row:3/4;
+  grid-column:2/3;
 }
 
 /* Nav Button */
@@ -59,3 +107,12 @@ nav ul li a{
 
 #hamBtn.open span:nth-child(1){display:none;}
 #hamBtn.open span:nth-child(2){display:block;}
+
+footer{
+  background-color: #F2CB05;
+  border-radius:10px;
+  color:black;
+  text-align: center;
+  padding:2%;
+  font-size:24px
+}
