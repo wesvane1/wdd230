@@ -5,7 +5,6 @@ const day3 = document.querySelector('#nextNextDay1');
 const test = new Date();
 var days = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 let tomorrow = test.getDay();
-console.log(tomorrow)
 
 if (tomorrow==4)
 {
