@@ -5,12 +5,71 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Build your own personal fruit smoothie with us">
-  <link rel="stylesheet" href="base.css">
-  <link rel="stylesheet" href="medium.css">
-  <link rel="stylesheet" href="large.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <title>Fresh</title>
 </head>
 <body>
-  
+  <header>
+    <nav>
+      <img src="images/logo.png" alt="company_logo" class="logo">
+      <h1>Bountiful Foods</h1>
+      <button id="hamBtn"> <span>&#9776;</span> <span>X</span> </button>
+      <ul id="primaryNav">
+        <li><a href="http://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook"></a></li>
+        <li><a href="index.html" class="link">Home</a></li>
+        <li><a href="fresh.html" class="link">Fresh</a></li>
+        <li><a href="aboutUs.html" class="link">About Us</a></li>
+        <li><a href="http://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form method="get" action="thanks.html">
+      <h2>Create A Drink!</h2>
+      <fieldset class="fs1">
+        <legend>Applicant Information</legend>
+        <label class="top">First Name* <input type="text" name="fname" required></label>
+        <label class="top">Email* <input type="email" name="email" placeholder="JonDoe@gmail.com" required></label>
+        <label class="top">Phone* <input type="tel" name="phone" placeholder="2084551234" required></label>
+      </fieldset>
+      <fieldset>
+        <div>Fruit Smoothie Flavors</div>
+        <label class="sbs"><input type="checkbox" name="code" value="yes"><span id="fruit1"></span></label>
+        <label class="sbs"><input type="checkbox" name="client" value="yes"><span id="fruit2"></span></label>
+        <label class="sbs"><input type="checkbox" name="editing" value="yes"><span id="fruit3"></span></label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Description of Business</legend>
+        <p>Special Instructions</p>
+        <label>
+          <textarea name="description" rows="5"></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit Drink" class="submitBtn">
+    </form>
+  </main>
+
+  <footer>
+    <!-- Logo goes here <img> -->
+    <div class="geography">
+      <p>Bountiful Foods</p>
+      <p>123 B street, Carlsbad, CA 95474</p>
+    </div>
+    <div class="contactInfo">
+      <p class="footEmail">email.e@bountifulfoods.net</p>
+      <p class="footPhone">1+ (555) 555-5555</p>
+      <!-- Google pin image here, takes you to carlsbad CA -->
+    </div>
+  </footer>
+  <script src="scripts/data.js"></script>
+  <script src="Final Project/scripts/button.js"></script>
+  <script src="scripts/button.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/days.js"></script>
 </body>
 </html>
