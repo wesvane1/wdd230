@@ -12,30 +12,22 @@
 </head>
 <body>
   <header>
-    <!-- Logo goes here <img> -->
     <nav>
-      <!-- Instagram Logo -->
+      <img src="images/logo.png" alt="company_logo" class="logo">
       <h1>Bountiful Foods</h1>
-      <!-- Facebook Logo -->
       <button id="hamBtn"> <span>&#9776;</span> <span>X</span> </button>
       <ul id="primaryNav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="fresh.html">Fresh</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="http://www.facebook.com" target="_blank"><img src="images/facebook.png" alt=""></a></li>
-        <li><a href="http://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt=""></a></li>
-        <!-- <div class="social">
-          <a href="http://www.facebook.com"></a><img src="images/facebook.png" alt="">
-          <a href="http://www.linkedin.com"></a><img src="images/linkedin.png" alt="">
-        </div> -->
+        <li><a href="http://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook"></a></li>
+        <li><a href="index.html" class="link">Home</a></li>
+        <li><a href="fresh.html" class="link">Fresh</a></li>
+        <li><a href="aboutUs.html" class="link">About Us</a></li>
+        <li><a href="http://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <div class="hero">
-      <!-- Hero image goes here, with proper lazy loading attribute 
-      hero image: picture of a smoothie or an orange farm-->
       <picture>
         <source media="(min-width: 1024px)" srcset="images/large.jpeg">
         <source media="(min-width: 560px)" srcset="images/medium.jpeg">
@@ -44,7 +36,7 @@
     </div>
 
     <div class="smoothie">
-      <h1>Our Product Locally Sourced!</h1>
+      <h1>Our Product is Locally Sourced!</h1>
       <p>Want to make your own smoothie?</p>
       <p>You have created <span id="createDrink">DO JS</span> drinks!</p>
       <button>Click Here!</button>
