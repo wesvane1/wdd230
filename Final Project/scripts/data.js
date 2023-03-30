@@ -4,27 +4,24 @@ async function getSmoothieData(){
   const response = await fetch(link);
   const data = await response.json();
   // console.log(data.fruit)
-  displayRandomFruit(data.fruit);
+  generateOptions(data.fruit);
 }
 
 getSmoothieData()
 
-const displayRandomFruit = (fruit) =>{
-  const fruit1 = document.querySelector("#fruit1");
-  const randint1 = getRandomInt(fruit.length);
+const generateOptions = (fruit) => {
+  const fruit1 = document.getElementById("fruit1");
+  const fruit2 = document.getElementById("fruit2");
+  const fruit3 = document.getElementById("fruit3");
 
-  const fruit2 = document.querySelector("#fruit2");
-  const randint2 = getRandomInt(fruit.length);
+  const fruitArray = [fruit1, fruit2, fruit3];
 
-  const fruit3 = document.querySelector("#fruit3");
-  const randint3 = getRandomInt(fruit.length);
-
-  fruit1.textContent=`${fruit[randint1].name}`;
-  fruit2.textContent=`${fruit[randint2].name}`;
-  fruit3.textContent=`${fruit[randint3].name}`;
-}
-
-// This gets a random number
-function getRandomInt(max){
-  return Math.floor(Math.random()*max)
-}
+  fruitArray.forEach(i =>{
+    fruit.forEach(fruit => {
+      let option = document.createElement('option');
+      option.value = fruit.name;
+      option.innerText = fruit.name;
+      i.appendChild(option);
+    });
+  });
+};
