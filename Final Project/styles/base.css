@@ -80,7 +80,7 @@ main{
 
 .smoothie, .weather, .information, .contact{
   text-align: center;
-  margin:1em;
+  margin:.5em;
   padding:1em;
   border-radius:5px;
   background-color:#3ab0ff80;
@@ -112,10 +112,6 @@ main{
 .weather{
   grid-row:3/4;
   grid-column:2/3;
-}
-
-#createDrink{
-  color: orange;
 }
 
 
