@@ -1,9 +1,10 @@
 // const url = 'https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&appid=75caa3fdf9f667d98b42ee52f413891b&cnt=5&units=imperial'
-const url = 'https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&appid=75caa3fdf9f667d98b42ee52f413891b&units=imperial&cnt=5'
+const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=33.1412&lon=117.3205&appid=75caa3fdf9f667d98b42ee52f413891b&units=imperial&cnt=5'
+
 
 const currentTemp = document.querySelector('#current-temp');
 const humidity = document.querySelector('#humidity')
-const highLow = document.querySelector('#high-low');
+const highLow = document.querySelector('#highlow');
 const highLow1 = document.querySelector('#highLow1');
 const highLow2 = document.querySelector('#highLow2');
 const highLow3 = document.querySelector('#highLow3');
@@ -23,12 +24,28 @@ async function apiFetch() {
   } catch (error) {
       console.log(error);
   }
+  forecast()
+}
+
+async function forecast(){
+  try {
+    const response1 = await fetch(forecastUrl);
+    if (response1.ok) {
+      const data1 = await response1.json();
+      console.log(data1);
+      // displayResults(data1);
+    } else {
+        throw Error(await response1.text());
+    }
+  } catch (error) {
+      console.log(error);
+  }
 }
 
 apiFetch();
 
 function  displayResults(weatherData) {
-  const humidity = weatherData.list[0].main.humidity;
+  const humidity1 = weatherData.list[0].main.humidity;
   const temp = weatherData.list[0].main.temp;
   const high = weatherData.list[0].main.temp_max;
   const low = weatherData.list[0].main.temp_min;
@@ -42,15 +59,15 @@ function  displayResults(weatherData) {
   const high3 = weatherData.list[3].main.temp_max;
   const low3 = weatherData.list[3].main.temp_min;
 
-  humidity.innerHTML = `<strong>${humidity}</strong>`;
-  currentTemp.innerHTML = `<strong>${temp.toFixed(0)}</strong>`;
-  highLow.innerHTML = `<strong>${high.toFixed(0)}/${low.toFixed(0)}`;
+  humidity.innerHTML = `<strong>${humidity1.toFixed(1)}</strong>`;
+  currentTemp.innerHTML = `<strong>${temp.toFixed(1)}</strong>`;
+  highLow.innerHTML = `<strong>${high.toFixed(1)}/${low.toFixed(1)}`;
 
-  highLow1.innerHTML = `<strong>${high1.toFixed(0)}/${low1.toFixed(0)}`;
+  highLow1.innerHTML = `<strong>${high1.toFixed(1)}/${low1.toFixed(1)}`;
 
-  highLow2.innerHTML = `<strong>${high2.toFixed(0)}/${low2.toFixed(0)}`;
+  highLow2.innerHTML = `<strong>${high2.toFixed(1)}/${low2.toFixed(1)}`;
 
-  highLow2.innerHTML = `<strong>${high3.toFixed(0)}/${low3.toFixed(0)}`;
+  highLow3.innerHTML = `<strong>${high3.toFixed(1)}/${low3.toFixed(1)}`;
 
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.list[0].weather[0].icon}.png`;
   const desc = weatherData.list[0].weather[0].description;
