@@ -1,0 +1,1 @@
+document.querySelector('#lastModified').innerHTML = `<strong>${document.lastModified}</strong>`
