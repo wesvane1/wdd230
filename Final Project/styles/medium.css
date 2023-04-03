@@ -15,10 +15,18 @@
   #primaryNav{
     grid-column:1/5;
     grid-row:2/3;
+    padding:0px;
+  }
+
+  #primaryNav img{
+    display:flex;
+    align-items: center;
   }
   nav ul{
     display:flex;
     justify-content: space-evenly;
+    align-items:center;
+    margin:0px;
   }
   nav button{
     display:none;
