@@ -35,22 +35,20 @@
         <label class="top">Email* <input id="email" type="email" name="email" placeholder="JonDoe@gmail.com" required ></label>
         <label class="top">Phone* <input id="phone" type="tel" name="phone" placeholder="2084551234" required ></label>
       </fieldset>
-      <fieldset>
-        <div>Fruit Smoothie Flavors</div>
+      <fieldset class="fruitSelect">
+        <legend>Fruit Smoothie Flavors</legend>
         <select name="fruit1" id="fruit1"></select>
         <select name="fruit2" id="fruit2"></select>
         <select name="fruit3" id="fruit3"></select>
       </fieldset>
       
-      <fieldset>
-        <legend>Description of Business</legend>
-        <p>Special Instructions</p>
-        <label>
-          <textarea name="description" rows="5"></textarea>
-        </label>
+      <fieldset class="fs3">
+        <legend>Special Instructions</legend>
+        <label for="textArea">How Would You Like Your Drink Prepared?</label>
+        <textarea name="textArea" id="textArea"></textarea>
       </fieldset>
 
-      <input id="createDrink" type="button" value="Submit Drink" class="submitBtn" onclick="f()">
+      <button type="button" id="createDrink1">Submit Drink</button>
 
       <div id="output"></div>
     </form>
@@ -67,11 +65,11 @@
       <p class="footPhone">1+ (555) 555-5555</p>
       <!-- Google pin image here, takes you to carlsbad CA -->
     </div>
+    <hr>
+    <p>Last modified: <span id="lastModified"></span></p>
   </footer>
   <script src="scripts/data.js"></script>
-  <script src="Final Project/scripts/button.js"></script>
   <script src="scripts/button.js"></script>
-  <script src="scripts/weather.js"></script>
-  <script src="scripts/days.js"></script>
+  <script src="scripts/lastModified.js"></script>
 </body>
 </html>
