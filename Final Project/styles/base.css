@@ -2,7 +2,10 @@
 body{
   font-family: 'Dosis', sans-serif;
   background-color: #f9f7f6;
+  font-size:1.5em;
 }
+
+body hr{border:.5px solid black}
 
 /* Header */
 header{
@@ -18,9 +21,10 @@ header nav {
 nav h1 {
   grid-row:2/3;
   text-align: center;
+  margin:auto;
 }
 nav ul {
-  list-style-type: none;
+  list-style-type: none; 
   display: none;
 }
 nav button{
@@ -139,12 +143,19 @@ input, select, textarea{padding:1rem;}
 
 .join{display:block;}
 
+form{
+  text-align:center;
+}
+
 main form h2{text-align:center;}
 
 form fieldset{
+  width:50%;
   border-radius: 10px;
   border: 3px solid #3AB0FF;
-  margin: 2rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top:2rem;
   padding: .5rem 2%;
 }
 
@@ -169,6 +180,11 @@ form label.sbs{
   border: 1px solid black;
   border-radius: 5px;
 }
+
+.fs3 label{
+  display:block;
+  margin-bottom: 10px;
+}
 form input.submitBtn{
   display: block;
   border: none;
@@ -191,19 +207,33 @@ form label.top input:required{
 form label.top input:required:valid{
   border-left: green solid 6px;
 }
-
-/* Thanks page */
-.thanks{
-  background-color: #3ab0ff55;
-  border-radius: 10px;
-  margin: 10px;
-}
-.thanks hr{
-  border-width:2px;
-  border-color: black;
+.fruitSelect select, textarea{
+  margin: 1em;
+  border: 1px solid black;
   border-radius:10px;
+  background-color: rgba(255, 255, 255, 0.426);
 }
-.thanks h2, h3{
-  text-align: center;
-  width: auto;
+
+#createDrink1{
+  display:flex;
+  margin:auto;
+  border-radius: 20px;
+  border: none;
+  background-color: #3ab0ff80;
+  padding:20px;
+  cursor:pointer;
+}
+
+/* This is for the fresh page: When the user creates a drink */
+#output2{
+  margin:auto;
+  width:auto;
+  max-width:500px;
+  background-color:#3ab0ff55;
+  text-align:center;
+  margin-bottom:1em;
+  border-radius: 10px
+}
+#output2 h3{
+  text-decoration: underline;
 }
