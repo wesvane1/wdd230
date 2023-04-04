@@ -1,7 +1,4 @@
 @media only screen and (min-width: 35rem){
-
-  /* Header */
-
   /* nav */
   .logo{
     grid-column:1/2;
@@ -31,8 +28,4 @@
   nav button{
     display:none;
   }
-
-  /* Main */
-
-  /* footer */
 }

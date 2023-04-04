@@ -64,7 +64,7 @@ nav ul li a{
   display:block;
 }
 
-/* This is for the Main Section */
+/* Main Section */
 
 main{
   display:grid;
@@ -135,7 +135,7 @@ footer{
   font-size:24px
 }
 
-/* This is for the Fresh Page */
+/* Fresh Page */
 
 input, select, textarea{padding:1rem;}
 
@@ -224,7 +224,7 @@ form label.top input:required:valid{
   cursor:pointer;
 }
 
-/* This is for the fresh page: When the user creates a drink */
+/* Fresh page: When the user creates a drink */
 #output2{
   margin:auto;
   width:auto;
