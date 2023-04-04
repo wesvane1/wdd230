@@ -82,13 +82,18 @@ main{
   border-radius: 5px;
 }
 
-.smoothie, .weather, .information, .contact{
+.smoothie, .weather, .information, .contact, .stateInfo{
   text-align: center;
   margin:.5em;
   padding:1em;
   border-radius:5px;
   background-color:#3ab0ff80;
   font-size:1.5em;
+}
+
+.stateInfo{
+  grid-row:4/5;
+  grid-column:2/3
 }
 
 .smoothie{

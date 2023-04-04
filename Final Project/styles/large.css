@@ -11,10 +11,16 @@
     grid-row:2/3;
     grid-column:1/2;
     text-align:center;
-    padding:20% 0 50px 0;
+    padding:15% 0 50px 0;
   }
   .weather{
     grid-row:2/3;
     grid-column:2/3;
+    padding: 10px;
+  }
+
+  .stateInfo{
+    grid-row:3/4;
+    grid-column:1/3
   }
 }
