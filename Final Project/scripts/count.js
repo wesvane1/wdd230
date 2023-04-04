@@ -1,12 +1,4 @@
-const count = localStorage.getItem('count');
-console.log(`The count is ${count}.`);
+let numOfDrinks = parseInt(localStorage.getItem('numOfDrinks')) || 0;
 
-const drinkCount = document.getElementById('createDrink');
-
-if (count == 1)
-{
-  drinkCount.innerHTML = `<strong>${count} drink</strong>`
-}
-else{
-  drinkCount.innerHTML = `<strong>${count} drinks</strong>`
-}
+document.getElementById('counter').textContent =
+  `${numOfDrinks} ${numOfDrinks === 1 ? 'drink':'drinks'}!`;

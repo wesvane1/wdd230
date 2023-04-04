@@ -98,6 +98,10 @@ async function f(){
   `
   const divContainer = document.querySelector('#output');
   divContainer.innerHTML = output;
+
+  let numOfDrinks = parseInt(localStorage.getItem('numOfDrinks')) || 0;
+  numOfDrinks++;
+  localStorage.setItem('numOfDrinks', numOfDrinks);
 }
 
 const createDrink = document.getElementById('createDrink1');
