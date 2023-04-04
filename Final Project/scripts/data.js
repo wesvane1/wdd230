@@ -42,7 +42,6 @@ async function f(){
   const selectedItem1 = f1.options[f1.selectedIndex].value;
   const fruit1Index = f1.selectedIndex;
 
-  // Lines 46-66 make sure all data chosen is correct, and that it can be displayed correctly
   const carb1 = (data.fruit[fruit1Index].nutritions.carbohydrates);
   const pro1 = (data.fruit[fruit1Index].nutritions.protein)
   const fat1 = (data.fruit[fruit1Index].nutritions.fat)
