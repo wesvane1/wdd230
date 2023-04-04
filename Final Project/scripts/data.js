@@ -1,21 +1,8 @@
 const link = "JSON/smoothie.json"
 
-// Increment count when button is clicked
-const button = document.getElementById('createDrink1');
-let count = 0
-button.addEventListener('click', () => {
-  count++;
-  localStorage.setItem('count', count);
-});
-
-// Save count to Local Storage
-localStorage.setItem('count', count);
-
-
 async function getSmoothieData(){
   const response = await fetch(link);
   const data = await response.json();
-  // console.log(data.fruit)
   generateOptions(data.fruit);
 }
 
@@ -55,7 +42,7 @@ async function f(){
   const selectedItem1 = f1.options[f1.selectedIndex].value;
   const fruit1Index = f1.selectedIndex;
 
-  // Lines 59-79 make sure all data chosen is correct, and that it can be displayed correctly
+  // Lines 46-66 make sure all data chosen is correct, and that it can be displayed correctly
   const carb1 = (data.fruit[fruit1Index].nutritions.carbohydrates);
   const pro1 = (data.fruit[fruit1Index].nutritions.protein)
   const fat1 = (data.fruit[fruit1Index].nutritions.fat)
@@ -99,6 +86,7 @@ async function f(){
   const divContainer = document.querySelector('#output');
   divContainer.innerHTML = output;
 
+  // This stores the number of drinks made by each user
   let numOfDrinks = parseInt(localStorage.getItem('numOfDrinks')) || 0;
   numOfDrinks++;
   localStorage.setItem('numOfDrinks', numOfDrinks);

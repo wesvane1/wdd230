@@ -1,4 +1,3 @@
-// const url = 'https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&appid=75caa3fdf9f667d98b42ee52f413891b&cnt=5&units=imperial'
 const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=33.1412&lon=117.3205&appid=75caa3fdf9f667d98b42ee52f413891b&units=imperial&cnt=5'
 
 
@@ -25,21 +24,6 @@ async function apiFetch() {
       console.log(error);
   }
   forecast()
-}
-
-async function forecast(){
-  try {
-    const response1 = await fetch(forecastUrl);
-    if (response1.ok) {
-      const data1 = await response1.json();
-      console.log(data1);
-      // displayResults(data1);
-    } else {
-        throw Error(await response1.text());
-    }
-  } catch (error) {
-      console.log(error);
-  }
 }
 
 apiFetch();
